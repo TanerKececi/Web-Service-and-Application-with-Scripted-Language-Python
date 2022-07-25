@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="loginpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="loginpagestyle.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <div>
+      <h2>Welcome to the login page</h2>
+      <form
+        action="login.py"
+        method="post"
+        name="loginform"
+        onsubmit="return validate()"
+      >
+        <p>User name: <input type="text" name="uname" /></p>
+        <p>Password: <input type="password" name="pwd" /></p>
+        <input type="submit" id="formsubmit" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+body {
+  background-color: gainsboro;
+}
+div {
+  text-align: center;
+}
+#formsubmit {
+  cursor: pointer;
+}

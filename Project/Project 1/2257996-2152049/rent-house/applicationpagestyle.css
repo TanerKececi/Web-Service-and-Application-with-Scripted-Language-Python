@@ -1,0 +1,14 @@
+body {
+  background-color: gainsboro;
+}
+.logout {
+  text-align: right;
+}
+.application {
+  text-align: center;
+}
+#formsubmit,
+#createAd,
+button {
+  cursor: pointer;
+}

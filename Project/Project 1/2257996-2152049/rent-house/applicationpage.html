@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="applicationpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="applicationpagestyle.css" />
+    <title>House Renting</title>
+  </head>
+  <body>
+    <div class="logout">
+      <a href="logout.py">
+        <h3>Logout</h3>
+      </a>
+    </div>
+    <div class="application">
+      <h1>House Renting Advertisements</h1>
+      <h3>Create a new Advertisement</h3>
+      <input type="button" id="createAd" value="Create" onclick="AdCreate()" />
+      <form
+        action="createad.py"
+        method="POST"
+        name="createAdform"
+        id="adcreate"
+        style="display: none"
+        onsubmit="return validate()"
+      >
+        <p>Street: <input type="text" name="sname" /></p>
+        <p>
+          City:
+          <select name="cname">
+            <option value="Lefkosa">Lefkosa</option>
+            <option value="Girne">Girne</option>
+            <option value="Gazi Magusa">Gazi Magusa</option>
+            <option value="Iskele">Iskele</option>
+            <option value="Guzelyurt">Guzelyurt</option>
+            <option value="Lefke">Lefke</option>
+          </select>
+        </p>
+        <p>Number of bedrooms: <input type="text" name="noOfbedrooms" /></p>
+        <p>Monthly fee: <input type="text" name="mfee" /></p>
+        <input type="submit" id="formsubmit" />
+      </form>
+      <h3>List all previous Advertisements</h3>
+      <a href="listad.py"><button>List</button></a>
+    </div>
+  </body>
+</html>
